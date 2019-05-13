@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+			var git = require('git-rev-sync');
+			function getTags () {
+				let tags = await git.listTags({ dir: '/' })
+				console.log(tags)
+			}
+		</script>
+	</head>
+	<body>
+		Exmerimenting retrieval of Git tag
+	</body>
+</html>
